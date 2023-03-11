@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>Aro Lalayan JS Medium mini-project 2</title>
+</head>
+<body>
+    <main :style="{ background: back }">
+
+        <div class="card">
+      
+          <img class="avatar" id="user-avatar">
+      
+          <div class="infos">
+            <div class="name capitalize" id="user-name">
+            </div>
+            <div class="birth">
+              <i class="fas fa-fw fa-birthday-cake"></i>
+              <span id="user-birth"></span>
+            </div>
+            <div class="email">
+              <i class="fas fa-fw fa-envelope"></i>
+              <span id="user-email"></span>
+            </div>
+            <div class="phone">
+              <i class="fas fa-fw fa-phone"></i>
+              <span id="user-phone"></span>
+            </div>
+            <div class="nationality capitalize">
+              <i class="fas fa-fw fa-globe-americas"></i>
+              <span id="user-nationality"></span>
+            </div>
+            <div class="location capitalize">
+              <i class="fas fa-map-marked-alt"></i>
+              <span id="user-location"></span>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div class="refresh">
+          <i class="fas fa-fw fa-random" id="user-generate" @click="generate()" data-text="Random"></i>
+        </div>
+      
+      </main>
+      <script src="js/script.js"></script>
+</body>
+</html>
