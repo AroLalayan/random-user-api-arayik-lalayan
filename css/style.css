@@ -99,9 +99,11 @@ body main .refresh i:after {
     font-size: 80%;
   }
   body main .card {
-    max-width: 80%;
+    max-width: 100%;
     width: auto;
     min-height: 150px;
+    justify-content: center;
+    margin: 0 auto;
   }
   body main .refresh {
     flex-direction: row;
@@ -124,4 +126,11 @@ body .copy {
 }
 body .copy a {
   color: inherit;
+}
+
+body .card-header{
+  text-transform: capitalize;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
